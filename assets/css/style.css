@@ -1,30 +1,69 @@
 body {
     font-family: 'Titillium Web';
+    color: #6f6f6f;
 }
 
-.body__wrapper {
-    max-width: 1800px;
-    margin: 0 auto;
+a {
+    text-decoration: none;
+    color: #6f6f6f;
 }
 
 .header__h2 {
     grid-area: hdh2;
+    align-self: end;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .header__menu_language {
     grid-area: hmlg;
+    align-self: center;
+    font-size: 14px;  
+    word-spacing: 9px;
 }
 
 .header__menu_of_links {
     grid-area: hmli;
+    align-self: end;
+    margin-bottom: 16px;
+    justify-self: end;
+    margin-right: 50px;
+    word-spacing: 23px;
 }
 
 .header__menu_authorization {
     grid-area: hmau;
+    align-self: end;
+    justify-self: end;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 28px;
+    margin-bottom: 15px;
+}
+
+.header__button_menu_authorization{
+    /* padding: 9px 21px;
+    border-radius: 30px;
+    background-color: antiquewhite;
+    margin-left: 21px;
+    margin-right: 3px; */
 }
 
 .header__text_block {
     grid-area: htbl;
+    text-align: center;
+}
+
+.header__slogan {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.header__slogan_description {
+    font-size: 36px;
+    margin-top: 17px;
+    font-weight: 600;
 }
 
 .header__social_icons {
@@ -35,15 +74,25 @@ body {
     grid-area: hbbl;
 }
 
+
+
 .header {
     display: grid;
     background-color: aquamarine;
-    grid-template-columns: 200px 200px 500px 500px 200px 200px;
-    grid-template-rows: 120px 40px 150px 130px 360px;
+    grid-template-columns: auto minmax(auto 200px) minmax(auto 200px) 500px 500px minmax(auto 200px) minmax(auto 200px) auto;
+    grid-template-rows: 120px 40px 153px 130px 360px;
     grid-template-areas: 
-    ". hdh2 hdh2 hmli hmau ." 
-    ". hmlg hmlg . . ." 
-    ". . . . . ." 
-    ". . htbl htbl hsic hsic" 
-    ". . hbbl hbbl . .";
+    ". . hdh2 hdh2 hmli hmau . ." 
+    ". . hmlg hmlg . . . ." 
+    ". . . . . . . ." 
+    ". . . htbl htbl hsic hsic ." 
+    ". . . hbbl hbbl . . .";
+}
+
+.text_color_red {
+    color: #fc5a5e;
+}
+
+.text_color_violet {
+    color: #5b4295;
 }
