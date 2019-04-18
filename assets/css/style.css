@@ -52,6 +52,10 @@ a {
     margin-left: 21px;
 }
 
+.header__menu_authorization_ico_login{
+    margin-right: 5px;
+}
+
 .header__text_block {
     grid-area: htbl;
     text-align: center;
@@ -72,13 +76,17 @@ a {
 
 .header__social_icons {
     grid-area: hsic;
-    font-size: 30px;
+    font-size: 22px;
     align-self: end;
     justify-self: right;
+    display: grid;
+    margin-bottom: 7px;
+    margin-right: 34px;
+    grid-row-gap: 15px;
 }
 
 .header__button_block {
-    margin-top: 94px;
+    margin-top: 80px;
     grid-area: hbbl;
     justify-self: center;
     font-size: 18px;
@@ -92,14 +100,17 @@ a {
 }
 
 .header__button_apple {
-    padding: 9px 18px;
+    padding: 6px 15px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 16px;
+    font-size: 22px;
 }
 
 .header__button_google_play {
-    padding: 9px 18px;
-    border-radius: 50%;
+    padding: 13px 11px 13px 15px;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 21px;
 }
 
 .text_color_red {
