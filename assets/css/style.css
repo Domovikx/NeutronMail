@@ -2,3 +2,48 @@ body {
     font-family: 'Titillium Web';
 }
 
+.body__wrapper {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.header__h2 {
+    grid-area: hdh2;
+}
+
+.header__menu_language {
+    grid-area: hmlg;
+}
+
+.header__menu_of_links {
+    grid-area: hmli;
+}
+
+.header__menu_authorization {
+    grid-area: hmau;
+}
+
+.header__text_block {
+    grid-area: htbl;
+}
+
+.header__social_icons {
+    grid-area: hsic;
+}
+
+.header__button_block {
+    grid-area: hbbl;
+}
+
+.header {
+    display: grid;
+    background-color: aquamarine;
+    grid-template-columns: 200px 200px 500px 500px 200px 200px;
+    grid-template-rows: 120px 40px 150px 130px 360px;
+    grid-template-areas: 
+    ". hdh2 hdh2 hmli hmau ." 
+    ". hmlg hmlg . . ." 
+    ". . . . . ." 
+    ". . htbl htbl hsic hsic" 
+    ". . hbbl hbbl . .";
+}
