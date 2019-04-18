@@ -8,6 +8,11 @@ a {
     color: #6f6f6f;
 }
 
+.button {
+    background-color: #5b4295;
+    color: white;
+}
+
 .header__h2 {
     grid-area: hdh2;
     align-self: end;
@@ -19,8 +24,8 @@ a {
 .header__menu_language {
     grid-area: hmlg;
     align-self: center;
-    font-size: 14px;  
-    word-spacing: 9px;
+    font-size: 14px;
+    word-spacing: 8px;
 }
 
 .header__menu_of_links {
@@ -28,36 +33,35 @@ a {
     align-self: end;
     margin-bottom: 16px;
     justify-self: end;
-    margin-right: 50px;
+    margin-right: 57px;
     word-spacing: 23px;
 }
 
 .header__menu_authorization {
     grid-area: hmau;
     align-self: end;
-    justify-self: end;
+    justify-self: right;
     font-size: 16px;
     font-weight: 700;
-    margin-right: 28px;
     margin-bottom: 15px;
 }
 
-.header__button_menu_authorization{
-    /* padding: 9px 21px;
+.header__button_menu_authorization {
+    padding: 7px 21px 10px;
     border-radius: 30px;
-    background-color: antiquewhite;
     margin-left: 21px;
-    margin-right: 3px; */
 }
 
 .header__text_block {
     grid-area: htbl;
     text-align: center;
+    align-self: end;
 }
 
 .header__slogan {
     font-size: 60px;
     font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .header__slogan_description {
@@ -68,25 +72,34 @@ a {
 
 .header__social_icons {
     grid-area: hsic;
+    font-size: 30px;
+    align-self: end;
+    justify-self: right;
 }
 
 .header__button_block {
+    margin-top: 94px;
     grid-area: hbbl;
+    justify-self: center;
+    font-size: 18px;
+    font-weight: 600;
 }
 
+.header__button_create_account {
+    padding: 13px 66px 16px;
+    border-radius: 28px;
+    margin-right: 21px;
+}
 
+.header__button_apple {
+    padding: 9px 18px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
 
-.header {
-    display: grid;
-    background-color: aquamarine;
-    grid-template-columns: auto minmax(auto 200px) minmax(auto 200px) 500px 500px minmax(auto 200px) minmax(auto 200px) auto;
-    grid-template-rows: 120px 40px 153px 130px 360px;
-    grid-template-areas: 
-    ". . hdh2 hdh2 hmli hmau . ." 
-    ". . hmlg hmlg . . . ." 
-    ". . . . . . . ." 
-    ". . . htbl htbl hsic hsic ." 
-    ". . . hbbl hbbl . . .";
+.header__button_google_play {
+    padding: 9px 18px;
+    border-radius: 50%;
 }
 
 .text_color_red {
@@ -95,4 +108,19 @@ a {
 
 .text_color_violet {
     color: #5b4295;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto repeat(9, 200px) auto;
+    grid-template-rows: 120px 40px 266px 368px;
+    grid-template-areas: ". . hdh2 hdh2 hdh2 hmli hmli hmli hmau . ." ". . hmlg hmlg hmlg hmlg hmlg hmlg hmlg . ." ". . . htbl htbl htbl htbl htbl hsic hsic ." ". . . . hbbl hbbl hbbl . . . .";
+}
+
+.body__header_substrate {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
 }
