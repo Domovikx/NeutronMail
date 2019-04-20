@@ -17,18 +17,6 @@ h3 {
     letter-spacing: -0.2px;
 }
 
-.style__border_right_1 {
-    border-right: 1px solid #b9b9b9;
-}
-
-.style__border_top_1 {
-    border-top: 1px solid #b9b9b9;
-}
-
-.style__border_bottom_1 {
-    border-bottom: 1px solid #b9b9b9;
-}
-
 .style__text_1 {
     font-size: 28px;
     font-style: italic;
@@ -60,6 +48,45 @@ h3 {
     font-size: 29px;
     color: #727272;
     letter-spacing: 0.2px;
+}
+
+.style__text_6 {
+    font-size: 14px;
+    color: #727272;
+    letter-spacing: 0.1px;
+}
+
+.style__text_7 {
+    font-size: 18px;
+    color: #727272;
+    margin: 0px 0px 0px 0px;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+}
+
+.style__text_8 {
+    font-size: 14px;
+    color: #727272;
+    word-spacing: 4px;
+    line-height: 23px;
+    /* word-spacing: 3px; */
+    font-weight: 600;
+}
+
+.style__border_right_1 {
+    border-right: 1px solid #b9b9b9;
+}
+
+.style__border_top_1 {
+    border-top: 1px solid #b9b9b9;
+}
+
+.style__border_bottom_1 {
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.style__border_left_1 {
+    border-left: 1px solid #b9b9b9;
 }
 
 .button {
@@ -325,10 +352,6 @@ h3 {
 
 /* BLOG */
 
-.item_grid {
-    /* background-color: aquamarine; */
-}
-
 .blog__item_1 {
     grid-area: bi1;
     display: grid;
@@ -374,7 +397,7 @@ h3 {
 .blog {
     display: grid;
     grid-template-columns: auto 400px 1000px 400px auto;
-    grid-template-rows: 144px 287px 367px 327px;
+    grid-template-rows: 144px 287px 367px 328px;
     grid-template-areas: ". bi1 bi1 bi1 ." ". bi2 bi3 bi3 ." ". . bi4 . ." ". bi7 bi5 bi6 .";
 }
 
@@ -431,3 +454,95 @@ h3 {
     font-weight: 700;
     letter-spacing: 0.7px;
 }
+
+/* footer */
+
+.item_grid {
+    /* background-color: aquamarine; */
+}
+
+.footer__item_1 {
+    grid-area: foi1;
+    text-align: -webkit-right;
+}
+
+.footer__item_2 {
+    grid-area: foi2;
+}
+
+.footer__item_3 {
+    grid-area: foi3;
+    text-align: right;
+}
+
+.footer__item_4 {
+    grid-area: foi4;
+    display: inline-flex;
+    text-align: right;
+}
+
+.footer__item_5 {
+    grid-area: foi5;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto 200px 400px 347px 453px 400px auto;
+    grid-template-rows: 286px 160px 156px;
+    grid-template-areas: ". . foi1 foi1 foi1 . ." ". . foi2 foi3 foi4 . ." ". . foi5 foi5 . . .";
+}
+
+.footer__item_1__img_1 {
+    margin: 0px 24px 0px 0px;
+}
+
+.footer__item_1__p_1 {
+    margin: 20px 22px 1px 0px;
+}
+
+.footer__item_3__p_1 {
+    margin: 1px 25px 1px 0px;
+}
+
+.footer__item_3__p_2 {
+    margin: 26px 25px 1px 0px;
+}
+
+.footer__item_4__div_1 {
+    width: 225px;
+}
+
+.footer__item_4__div_2 {
+    width: 202px;
+}
+
+.footer__item_4__p_1 {
+    margin: 1px 0px 0px 0px;
+}
+
+.footer__item_4__p_2 {
+    margin: 26px 0px 0px 0px;
+    word-spacing: 3px;
+}
+
+.style__text_9 {
+    font-size: 14px;
+    color: #727272;
+    word-spacing: 4px;
+    line-height: 23px;
+    font-weight: 600;
+}
+
+.footer__item_2__div_1>p {
+    margin: 0px 0px 0px 19px;
+    word-spacing: 0px;
+    position: relative;
+    top: -4px;
+}
+
+.footer__item_2__div_1>p>a {
+    font-weight: 700;
+    letter-spacing: 0.15px;
+}
+
+.footer__item_5>p {}
