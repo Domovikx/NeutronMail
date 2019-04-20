@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    font-weight: 700;
+}
+
 h2 {
     font-size: 31px;
 }
@@ -69,7 +73,6 @@ h3 {
     color: #727272;
     word-spacing: 4px;
     line-height: 23px;
-    /* word-spacing: 3px; */
     font-weight: 600;
 }
 
@@ -92,6 +95,12 @@ h3 {
 .button {
     background-color: #60316b;
     color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.button:hover {
+    background-color: #794385;
+    color: antiquewhite;
 }
 
 .header__h2 {
@@ -164,6 +173,11 @@ h3 {
     margin-bottom: 7px;
     margin-right: 34px;
     grid-row-gap: 15px;
+}
+
+.header__social_icons>a:hover {
+    color: #5b4295;
+    font-weight: 400;
 }
 
 .header__button_block {
@@ -439,13 +453,11 @@ h3 {
     position: absolute;
     top: 1560px;
     text-align: right;
-    /* background-color: aqua; */
 }
 
 .blog__item_4__img>div {
     width: 1800px;
     margin: 0 auto;
-    /* background-color: #fc5a5e; */
 }
 
 .blog__item_5__p_1 {
@@ -474,6 +486,12 @@ h3 {
     word-spacing: 2px;
     font-weight: 700;
     letter-spacing: 0.7px;
+    background-color: #4360d3;
+}
+
+.blog__item_5__button_2:hover {
+    color: white;
+    background-color: #5e7bea;
 }
 
 /* footer */
@@ -609,12 +627,10 @@ h3 {
     position: absolute;
     top: 1676px;
     width: 100%;
-    /* background-color: brown; */
     z-index: -20;
 }
 
 .blog__item_4__substrate>div {
     width: 1800px;
     margin: 0 auto;
-    /* background-color: aqua; */
 }
