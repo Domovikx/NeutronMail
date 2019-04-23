@@ -1,0 +1,38 @@
+@media screen and (max-width: 800px) {
+    .header {
+        display: grid;
+        grid-template-columns: minmax(20px, auto) minmax(auto, 180px) minmax(auto, 250px) minmax(20px, auto);
+        grid-template-rows: 60px 60px 40px 40px 230px 128px 237px;
+        grid-template-areas: '. he1 he4 .' '. he6 he6 . ' '. he2 he2 he2' '. he3 he3 he3' '. he5 he5 .' 'he7 he7 he7 he7 ' '. . . .';
+        background-image: url(../img/top-bg-1.png);
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .text__style_4 {
+        margin: 0px 24px 0px 0px;
+    }
+    .header__item_3 {
+        margin: 0px 0px 0px 0px;
+        align-self: center;
+    }
+    .header__item_6 {
+        grid-area: he6;
+        display: flex;
+        justify-self: center;
+    }
+    .header__item_6>a>i {
+        display: block;
+        font-size: 22px;
+        margin: 15px;
+    }
+    .security {
+        display: grid;
+        grid: '.' 40px 'se11' minmax(70px, auto) 'se12' auto '. ' 40px 'se21' minmax(70px, auto) 'se22' auto '. ' 40px 'se31 ' minmax(70px, auto) 'se32 ' auto '. ' 40px 'se4 ' auto 'se5 ' auto / auto;
+    }
+    .security__item_1_1 {
+        margin: 0px 25px;
+    }
+    .security__item_1_2 {
+        margin: 0px 25px;
+    }
+}
