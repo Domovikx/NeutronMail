@@ -6,4 +6,7 @@
     .security_2 {
         grid-template-columns: minmax(30%, 973px) 336px minmax(auto, 490px);
     }
+    .blog__item_8 {
+        display: none;
+    }
 }
