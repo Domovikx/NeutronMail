@@ -9,4 +9,33 @@
     .blog__item_8 {
         display: none;
     }
+    .blog__item_4 {
+        grid-column: 1/4;
+        grid-row: 4;
+        justify-self: center;
+        margin: 0 auto;
+    }
+    .blog__item_9 {
+        grid-column: 1/4;
+        grid-row: 4;
+        display: grid;
+        align-self: end;
+        justify-self: center;
+    }
+    .blog__item_4>div {
+        width: auto;
+        text-align: center;
+    }
+    .footer__item_2>div {
+        text-align: center;
+    }
+    .blog__item_9 div {
+        width: 100%;
+    }
+    .footer__item_7 {
+        grid-column: 2/6;
+    }
+    .footer__item_4 {
+        grid-row: 3/4;
+    }
 }

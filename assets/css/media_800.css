@@ -35,4 +35,13 @@
     .security__item_1_2 {
         margin: 0px 25px;
     }
+    .footer__item_7 {
+        grid-column: 2/6;
+        grid-row: 4;
+    }
+    .footer__item_4 {
+        grid-column: 3;
+        grid-row: 3/4;
+    }
+
 }
